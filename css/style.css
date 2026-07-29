@@ -1,0 +1,84 @@
+body {
+    background: radial-gradient(circle at center, #202020 0%, #171717 70%);
+    color: #f0f0f0;
+    font-family: sans-serif;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+#chestImage {
+    width: 200px;
+    height: 200px;
+    image-rendering: pixelated;
+}
+.shake {
+    animation: shake 1s ease;
+} 
+#chestImage.opened {
+    transform: scale(1.1);
+}
+@keyframes shake {
+    0%   { transform: scale(1.1) translateX(0); }
+    25%  { transform: scale(1.1) translateX(-4px); }
+    50%  { transform: scale(1.1) translateX(4px); }
+    75%  { transform: scale(1.1) translateX(-4px); }
+    100% { transform: scale(1.1) translateX(0); }
+}
+.glow {
+    filter: drop-shadow(0 0 20px #ff6fae) drop-shadow(0 0 40px #ff6fae);
+}
+.gift-card {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    margin-top: 20px;
+
+    background-color: #1f1f1f;
+    border: 2px solid #ffa6c9;
+    border-radius: 10px;
+    padding: 20px;
+}
+.gift-card.visible {
+    opacity: 1;
+}
+h1 {
+    font-family: "Silkscreen", cursive;
+    font-size: 28px;
+    line-height: 1.5;
+}
+button {
+    font-family: "Silkscreen", cursive;
+}
+button {
+    font-family: "Silkscreen", cursive;
+    background-color: #ffa6c9;
+    color: #171717;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #ffc2d9;
+}
+p {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    max-width: 400px;
+    margin: 6px 0;
+}
+.code {
+    font-family: "Silkscreen", monospace;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffa6c9;
+}
