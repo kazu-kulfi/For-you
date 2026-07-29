@@ -49,6 +49,7 @@ h1 {
     font-family: "Silkscreen", cursive;
     font-size: 28px;
     line-height: 1.5;
+    text-align: center;
 }
 button {
     font-family: "Silkscreen", cursive;
@@ -73,7 +74,7 @@ p {
     line-height: 1.6;
     color: #f0f0f0;
     max-width: 400px;
-    margin: 6px 0;
+    margin: 6px auto;
 }
 .code {
     font-family: "Silkscreen", monospace;
@@ -81,4 +82,17 @@ p {
     font-weight: bold;
     letter-spacing: 2px;
     color: #ffa6c9;
+}
+.reveal-row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.chest-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
